@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Theme Colors */
+  --color-primary: #0055c9;
+  --color-primary-container: #006bfb;
+  --color-secondary: #ff7a00; /* Action Orange from requirements */
+  --color-secondary-container: #fb7800;
+  
+  --color-brand-blue: #0f6fff;
+  --color-brand-orange: #ff7a00;
+  --color-brand-dark: #0f172a;
+  --color-brand-slate: #475569;
+  
+  --color-surface-white: #ffffff;
+  --color-surface-off: #f8fafc;
+  --color-surface-blue-tint: #f0f6ff;
+
+  /* Typography Scale */
+  --text-display-lg: 64px;
+  --text-display-lg--line-height: 72px;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
+
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 56px;
+  --text-headline-xl--letter-spacing: -0.02em;
+  --text-headline-xl--font-weight: 700;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-brand-slate;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-brand-dark font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply backdrop-blur-md bg-white/40 border border-white/10 shadow-[0_40px_100px_rgba(15,111,255,0.08)];
+  }
+  
+  .glow-orange {
+    @apply shadow-[0_0_20px_rgba(255,122,0,0.3)];
+  }
+  
+  .glow-blue {
+    @apply shadow-[0_0_20px_rgba(15,111,255,0.2)];
+  }
+
+  .section-gap {
+    @apply py-20 lg:py-[120px];
+  }
+}

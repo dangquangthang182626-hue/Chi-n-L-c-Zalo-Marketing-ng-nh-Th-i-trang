@@ -1,0 +1,8 @@
+{
+  "name": "Zalo Marketing Automation",
+  "description": "Hệ thống marketing tự động trên Zalo giúp shop thời trang tăng đơn hàng và chăm sóc khách hàng tự động.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
